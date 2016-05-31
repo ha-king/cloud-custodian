@@ -110,7 +110,7 @@ class PythonPackageArchive(object):
 
         # Library Source
         venv_lib_path = os.path.join(
-            self.virtualenv_dir, 'lib', 'python2.7', 'site-packages')
+            self.virtualenv_dir, 'lib', 'python2.7', 'dist-packages')
 
         for root, dirs, files in os.walk(venv_lib_path):
             if self.lib_filter:
